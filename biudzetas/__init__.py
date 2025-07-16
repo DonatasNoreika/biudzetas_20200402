@@ -33,7 +33,7 @@ def load_user(vartotojo_id):
 
 class ManoModelView(ModelView):
     def is_accessible(self):
-        return current_user.is_authenticated and current_user.el_pastas == "donoras@gmail.com"
+        return current_user.is_authenticated and current_user.el_pastas == "el@pastas.lt"
 
 from biudzetas import routes
 admin = Admin(app)
